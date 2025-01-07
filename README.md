@@ -27,20 +27,19 @@ TensorFlow or Keras
 NumPy
 Matplotlib
 OpenCV (optional for image preprocessing)
-Install dependencies
-bash
-Copy code
+Install dependencies:
+
 pip install -r requirements.txt
+
 Dataset
 The dataset consists of images of chest X-rays labeled into four categories:
-
 COVID
 Lung Opacity
 Normal
 Viral Pneumonia
-Ensure that the dataset is placed in the data/ directory, with separate folders for each class.
 
-Model Architectures
+
+Model Architectures:
 ResNet50: A deep residual network to capture image features effectively.
 XceptionNet: An efficient model with depthwise separable convolutions for improved performance.
 VGG16: A simpler CNN architecture with deep layers designed for image recognition tasks.
@@ -48,10 +47,8 @@ Each model is fine-tuned with a pre-trained base on ImageNet and further trained
 
 Training
 The training script trains all three models on the dataset. The following command can be used to run the training:
-
-bash
-Copy code
 python train.py
+
 Training parameters such as learning rate, epochs, and batch size can be modified in the script.
 
 Results
